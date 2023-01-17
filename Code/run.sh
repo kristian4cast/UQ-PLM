@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cuda=0
-model_name="bert_base-ce"
+model_name="electra_base-fl"
     
 for task_id in "Task1" 
 do
