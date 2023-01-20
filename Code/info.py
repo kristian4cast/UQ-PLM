@@ -73,7 +73,7 @@ class Info:
                      'bert_large':5e-6, 'xlnet_large':5e-6, 'electra_large':5e-6, 'roberta_large':5e-6, 'deberta_large':5e-6}
         
         self.DIR_CURR = os.getcwd()
-        self.DIR_DATA = os.path.join(self.DIR_CURR, '../Data')
+        self.DIR_DATA = "/p/scratch/deepacf/maelstrom/maelstrom_data/ap2/data/UQ-PLM/"
         self.DIR_RESULT = os.path.join(self.DIR_CURR, '../Result')
         
     
