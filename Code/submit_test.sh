@@ -3,8 +3,8 @@
 #SBATCH --nodes=1
 #SBATCH --output=gpu-out.%j
 #SBATCH --error=gpu-err.%j
-#SBATCH --time=02:00:00
-#SBATCH --partition=develgpus
+#SBATCH --time=24:00:00
+#SBATCH --partition=gpus
 #SBATCH --gres=gpu:4
 
 module purge
