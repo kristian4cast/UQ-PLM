@@ -49,7 +49,7 @@ class Info:
         self.TYPE_TEST_OUT = 'test_out'
         self.TYPE_TESTS = [self.TYPE_TEST_IN, self.TYPE_TEST_OUT]
         
-        self.TASK2NCLASS = {'Task1':(2,1), 'Task2':(3,1), 'Task3':(1,4)}
+        self.TASK2NCLASS = {'Task1':(2,1), 'Task2':(3,1), 'Task3':(1,4), 'Task4':(2,1)}
         
         self.MODEL2NAME = {'bert_base':'bert-base-cased', 'bert_large':'bert-large-cased',
                      'xlnet_base':'xlnet-base-cased', 'xlnet_large':'xlnet-large-cased',
@@ -73,7 +73,7 @@ class Info:
                      'bert_large':5e-6, 'xlnet_large':5e-6, 'electra_large':5e-6, 'roberta_large':5e-6, 'deberta_large':5e-6}
         
         self.DIR_CURR = os.getcwd()
-        self.DIR_DATA = "/p/scratch/deepacf/maelstrom/maelstrom_data/ap2/data/UQ-PLM/"
+        self.DIR_DATA = os.environ['FOLDER_UQPLM_DATA']
         self.DIR_RESULT = os.path.join(self.DIR_CURR, '../Result')
         
     
