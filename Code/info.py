@@ -49,11 +49,11 @@ class Info:
         self.TYPE_TEST_OUT = 'test_out'
         self.TYPE_TESTS = [self.TYPE_TEST_IN, self.TYPE_TEST_OUT]
         
-        self.TASK2NCLASS = {'Task1':(2,1), 'Task2':(3,1), 'Task3':(1,4), 'Task4':(2,1)}
+        self.TASK2NCLASS = {'Task1':(2,1), 'Task2':(3,1), 'Task3':(1,4), '  ':(2,1)}
         
         self.MODEL2NAME = {'bert_base':'bert-base-cased', 'bert_large':'bert-large-cased',
                      'xlnet_base':'xlnet-base-cased', 'xlnet_large':'xlnet-large-cased',
-                     'electra_base':'google/electra-base-discriminator', 'electra_large':'google/electra-large-discriminator',
+                     'electra_base':'google/electra-base-discriminator', 'electra_base_LRl':'google/electra-base-discriminator', 'electra_large':'google/electra-large-discriminator',
                      'roberta_base':'roberta-base', 'roberta_large':'roberta-large',
                      'deberta_base':'microsoft/deberta-base', 'deberta_large':'microsoft/deberta-large'}
         
@@ -69,7 +69,7 @@ class Info:
         self.HP_MAX_GRAD_NORM = 1.0
         self.HP_BATCH_SIZE = 16
         self.HP_NUM_EPOCH = 5
-        self.HP_MODEL2LR = {'bert_base':2e-5, 'xlnet_base':2e-5, 'electra_base':2e-5, 'roberta_base':2e-5, 'deberta_base':2e-5,
+        self.HP_MODEL2LR = {'bert_base':2e-5, 'xlnet_base':2e-5, 'electra_base':2e-5, 'electra_base_LRl':2e-6, 'roberta_base':2e-5, 'deberta_base':2e-5,
                      'bert_large':5e-6, 'xlnet_large':5e-6, 'electra_large':5e-6, 'roberta_large':5e-6, 'deberta_large':5e-6}
         
         self.DIR_CURR = os.getcwd()
