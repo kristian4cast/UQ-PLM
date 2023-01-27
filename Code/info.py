@@ -49,7 +49,7 @@ class Info:
         self.TYPE_TEST_OUT = 'test_out'
         self.TYPE_TESTS = [self.TYPE_TEST_IN, self.TYPE_TEST_OUT]
         
-        self.TASK2NCLASS = {'Task1':(2,1), 'Task2':(3,1), 'Task3':(1,4), '  ':(2,1)}
+        self.TASK2NCLASS = {'Task1':(2,1), 'Task2':(3,1), 'Task3':(1,4), 'Task4':(2,1)}
         
         self.MODEL2NAME = {'bert_base':'bert-base-cased', 'bert_large':'bert-large-cased',
                      'xlnet_base':'xlnet-base-cased', 'xlnet_large':'xlnet-large-cased',

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SEEDS="${1:-0}"
-model_name="electra_base-fl"
+model_name="${2-electra_base_LRl-fl}"
 #./../env_juwels.sh    
 for task_id in "Task4" 
 do

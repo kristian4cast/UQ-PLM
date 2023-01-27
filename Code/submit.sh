@@ -3,8 +3,8 @@
 #SBATCH --nodes=1
 #SBATCH --output=logs/gpu-out.%j
 #SBATCH --error=logs/gpu-err.%j
-#SBATCH --time=24:00:00
-#SBATCH --partition=booster
+#SBATCH --time=02:00:00
+#SBATCH --partition=develgpus
 #SBATCH --gres=gpu:4
 
 export FOLDER_UQPLM_DATA="/p/scratch/deepacf/maelstrom/maelstrom_data/ap2/data/UQ-PLM/"
