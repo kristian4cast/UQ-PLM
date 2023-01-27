@@ -81,7 +81,7 @@ def load(args, info, stage):
             text1s, text2s, labels = [], [], []
             for row in ori_data:
                 
-                if args.task_id in ['Task1' ,'Task4']:
+                if args.task_id in ['Task1', 'Task4', 'Task5']:
                     text1s.append(row[0])
                     labels.append(row[1])
                     
