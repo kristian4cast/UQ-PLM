@@ -3,7 +3,7 @@
 SEEDS="${1:-0}"
 model_name="electra_base-fl"
 #./../env_juwels.sh    
-for task_id in "Task1" 
+for task_id in "Task4" 
 do
     for seed in "${SEEDS}"
     do

@@ -1,19 +1,20 @@
 #!/bin/bash -x
 #SBATCH --account=deepacf
 #SBATCH --nodes=1
-#SBATCH --output=gpu-out.%j
-#SBATCH --error=gpu-err.%j
-#SBATCH --time=02:00:00
-#SBATCH --partition=develgpus
+#SBATCH --output=logs/gpu-out.%j
+#SBATCH --error=logs/gpu-err.%j
+#SBATCH --time=24:00:00
+#SBATCH --partition=booster
 #SBATCH --gres=gpu:4
 
+export FOLDER_UQPLM_DATA="/p/scratch/deepacf/maelstrom/maelstrom_data/ap2/data/UQ-PLM/"
 module purge
-conda activate uq-plm
 module load Stages/2023
 module load cuDNN/8.6.0.163-CUDA-11.7
 module load GCC/11.3.0
 module load Emacs/28.2
 module unload Python/3.10.4
+conda activate uq-plm
 module list
 
 srun --exclusive -n 1 --gres=gpu:1 --cpu-bind=map_cpu:0  ./run_juwels.sh 0 &
