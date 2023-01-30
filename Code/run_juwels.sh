@@ -2,8 +2,9 @@
 
 SEEDS="${1:-0}"
 model_name="${2-electra_base_LRl-fl}"
-#./../env_juwels.sh    
-for task_id in "Task4" 
+TASK_ID="${3-Task5}"
+#./../env_juwels.sh
+for task_id in "${TASK_ID}"
 do
     for seed in "${SEEDS}"
     do
